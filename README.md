@@ -7,13 +7,18 @@ Recuerde ejecutar el comando
 npm install
 ```
 ## Modelo de usuario
-- Nombre    -> String    -> Requerido
-- Email     -> String    -> Requerido
-- Password  -> String    -> Requerido
-- Img       -> String    
-- Role      -> String    -> Requerido    -> Default: 'USER_ROLE']
-- Estado    -> Boolean   -> Requerido    -> Default: true
-- Google    -> Boolean   -> Requerido    -> Default: false
+
+| --------- | ------------ | --------- | --------- |
+| Atributos | Tipo de dato | Requerido | Default   |
+| --------- | ------------ | --------- | --------- |
+| Nombre    | String       | True      |           |
+| Email     | String       | True      |           |
+| Password  | String       | True      |           |
+| Img       | String       |           |           |
+| Role      | String       | True      | USER_ROLE |
+| Estado    | Boolean      | True      | true      |
+| Google    | Boolean      | True      | false     |
+| --------- | ------------ | --------- | --------- |
 
 ## Peticiones
 - GET:           Nos trae todos los usuarios (que no han sido eliminados).
