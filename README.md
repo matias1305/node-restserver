@@ -11,13 +11,13 @@ npm install
 
 | Atributos | Tipo de dato | Requerido | Default   |
 | :-------- | :----------- | :-------: | :-------: |
-| Nombre | String | True | - |
-| Email | String | True | - |
-| Password | String | True | - |
-| Img | String | - | - | - |
-| Role | String | True | 'USER_ROLE' |
-| Estado | Boolean | True | true |
-| Google | Boolean | True | false |
+| Nombre | String | Si | - |
+| Email | String | Si | - |
+| Password | String | Si | - |
+| Img | String | No | - | - |
+| Role | String | Si | 'USER_ROLE' |
+| Estado | Boolean | Si | true |
+| Google | Boolean | Si | false |
 
 ## Peticiones
 | Peticion | Descripcion |
@@ -32,10 +32,10 @@ npm install
 ### Restricciones
 | Peticion | Token | 'ADMIN_ROLE' |
 | :------- | :---: | :----------: |
-| GET | TRUE | FALSE |
-| POST | TRUE | TRUE |
-| PUT | TRUE | TRUE |
-| DELETE | TRUE | TRUE |
-| POST['LOGIN'] | FALSE | FALSE |
+| GET | Si | No |
+| POST | Si | Si |
+| PUT | Si | Si |
+| DELETE | Si | Si |
+| POST['LOGIN'] | No | No |
 
 Para más informacion visite la siguiente url https://documenter.getpostman.com/view/2447566/cafe-node/RW83PC7S
