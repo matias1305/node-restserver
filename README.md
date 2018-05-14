@@ -27,12 +27,6 @@ npm install
 - POST['LOGIN']: Genera un token para para poder acceder a las peticiones.
 
 ### Restricciones
-- GET:           Token
-- POST:          Token y 'ADMIN_ROLE'
-- PUT:           Token y 'ADMIN_ROLE'
-- DELETE:        Token y 'ADMIN_ROLE'
-- POST['LOGIN']: Sin restriccion
-
 | Peticion | Token | 'ADMIN_ROLE' |
 | :------- | :---: | :----------: |
 | GET | TRUE | FALSE |
@@ -41,4 +35,4 @@ npm install
 | DELETE | TRUE | TRUE |
 | POST['LOGIN'] | FALSE | FALSE |
 
-Para más informacion visite las siguiente url https://documenter.getpostman.com/view/2447566/cafe-node/RW83PC7S
+* Para más informacion visite la siguiente url https://documenter.getpostman.com/view/2447566/cafe-node/RW83PC7S
