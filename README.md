@@ -8,16 +8,16 @@ npm install
 ```
 ## Modelo de usuario
 
-| --------- | ------------ | --------- | --------- |
+
 | Atributos | Tipo de dato | Requerido | Default   |
-| --------- | ------------ | --------- | --------- |
-| Nombre    | String       | True      |           |
-| Email     | String       | True      |           |
-| Password  | String       | True      |           |
-| Img       | String       |           |           |
-| Role      | String       | True      | USER_ROLE |
-| Estado    | Boolean      | True      | true      |
-| Google    | Boolean      | True      | false     |
+| :-------- | :----------- | :-------: | :-------: |
+| Nombre | String | True | - |
+| Email | String | True | - |
+| Password | String | True | - |
+| Img | String | - | - | - |
+| Role | String | True | USER_ROLE |
+| Estado | Boolean | True | true |
+| Google | Boolean | True | false |
 | --------- | ------------ | --------- | --------- |
 
 ## Peticiones
