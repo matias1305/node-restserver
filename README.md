@@ -15,10 +15,9 @@ npm install
 | Email | String | True | - |
 | Password | String | True | - |
 | Img | String | - | - | - |
-| Role | String | True | USER_ROLE |
+| Role | String | True | 'USER_ROLE' |
 | Estado | Boolean | True | true |
 | Google | Boolean | True | false |
-| --------- | ------------ | --------- | --------- |
 
 ## Peticiones
 - GET:           Nos trae todos los usuarios (que no han sido eliminados).
@@ -33,5 +32,13 @@ npm install
 - PUT:           Token y 'ADMIN_ROLE'
 - DELETE:        Token y 'ADMIN_ROLE'
 - POST['LOGIN']: Sin restriccion
+
+| Peticion | Token | 'ADMIN_ROLE' |
+| :------- | :---: | :----------: |
+| GET | TRUE | FALSE |
+| POST | TRUE | TRUE |
+| PUT | TRUE | TRUE |
+| DELETE | TRUE | TRUE |
+| POST['LOGIN'] | FALSE | FALSE |
 
 Para más informacion visite las siguiente url https://documenter.getpostman.com/view/2447566/cafe-node/RW83PC7S
