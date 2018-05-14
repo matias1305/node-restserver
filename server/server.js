@@ -8,10 +8,12 @@ const app = express();
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
-// parse application/json
+
+// parse application/json.
 app.use(bodyParser.json());
-// Rutas de solicitudes hacias usuarios.
-app.use( require('./routes/usuario.routes') );
+
+// Configuracion global de rutas.
+app.use(require('./routes/index'));
 
 // Conexion a la base de datos de MongoDB
 mongoose.connect(process.env.URLDB, (err, res) => {
